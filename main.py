@@ -1,4 +1,6 @@
 import discord
+import os
+from dotenv import load_dotenv
 
 client = discord.Client()
 
@@ -26,4 +28,5 @@ async def on_message(message):
     if message.content.startswith(':leave '):
         await message.channel.send('leave call')
 
-client.run('ODg3NDU3Mzg0MDg2MjU3NzA0.YUEbGA.NPEbwSFv2UcZX8m4LMwq18jaTvo')
+load_dotenv()
+client.run(os.getenv('TOKEN'))
