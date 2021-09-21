@@ -20,7 +20,6 @@ async def on_message(message):
 
     if message.content.startswith('{}p '.format(prefix)) or message.content.startswith('{}play '.format(prefix)):
         await joinCall(message)
-        await message.channel.send('play')
     
     elif message.content.startswith('{}skip'.format(prefix)) or message.content.startswith('{}next'.format(prefix)):
         await message.channel.send('skip')
@@ -33,7 +32,6 @@ async def on_message(message):
 
     elif message.content.startswith('{}leave'.format(prefix)):
         await leaveCall(message)
-        await message.channel.send('leave')
     
     elif message.content.startswith('{}help'.format(prefix)):
         await message.channel.send('**Available Commands**:\n> {}play\n> {}skip\n> {}queue\n> {}remove\n> {}leave\n> {}help\n> {}changeprefix'.format(prefix, prefix, prefix, prefix, prefix, prefix, prefix))
