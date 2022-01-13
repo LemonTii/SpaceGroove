@@ -3,7 +3,7 @@
 # SpaceGroove
 > SpaceGroove is a Discord bot that allows users to have the bot join calls in servers and play music for them within the calls! <br/> 
 
-Made-by: Josh Kim ([LemonTii](https://github.com/LemonTii))
+Made-by: Josh Kim ([LemonTii](https://github.com/LemonTii)) John Yoon ([fedele7008](https://github.com/fedele7008))
 
 ## Minimum Requirements:
  - Python 3.5.3 or higher
